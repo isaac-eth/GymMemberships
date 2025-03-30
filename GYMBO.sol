@@ -13,7 +13,7 @@ contract GymMembership is ERC721, Ownable {
     Counters.Counter private tokenIdCounter;
     using Strings for uint256; 
 
-    string public baseURI = "/*#########*/";
+    string public baseURI = "https://isaac-eth.github.io/GymMemberships/";
 
     GymToken public gym;
 
@@ -101,7 +101,7 @@ contract GymMembership is ERC721, Ownable {
     }
 
     function tokenURI (uint256 tokenId) public view override returns (string memory) {
-        require(_ownerOf(tokenId) != address(0), "NFT no existe");
+        require(_ownerOf(tokenId) != address(0), "NFT does not exist");
         return string(abi.encodePacked(baseURI, tokenId.toString(), ".json"));
     }
 
@@ -145,24 +145,5 @@ contract GymMembership is ERC721, Ownable {
         gym.transferFrom(msg.sender, address(this), 5);
     }
 
-}    /*// // Número de hamburguesas en la nevera
-uint256 hamburguesas = 5;
-
-// La nevera inicia apagada
-bool neveraEncendida = false;
-
-// Mientras haya hamburguesas dentro
-while (hamburguesas > 0) {
-    // Encender la nevera
-    neveraEncendida = true;
-
-    // Simulamos que una hamburguesa se enfría y luego se retira
-    hamburguesas--;
-
-    // Si ya no hay hamburguesas, apagamos la nevera
-    if (hamburguesas == 0) {
-        neveraEncendida = false;
-    }
 }
- */
     
