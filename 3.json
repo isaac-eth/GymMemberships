@@ -1,0 +1,11 @@
+{
+  "name": "Six-Month",
+  "description": "Six Months Membership",
+  "image": "https://drive.google.com/file/d/17BUn5-onQslYYx5c69grclNc9ncmGkaL/view?usp=sharing",
+  "attributes": [
+    {
+      "trait_type": "Duration",
+      "value": "One Year"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "One-Month",
+  "description": "One Month Membership",
+  "image": "https://drive.google.com/file/d/1v5wSk9sL8gatUbWrcVUPcbKe_PuW5C7k/view?usp=sharing",
+  "attributes": [
+    {
+      "trait_type": "Duration",
+      "value": "One Month"
+    }
+  ]
+}
